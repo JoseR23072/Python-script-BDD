@@ -1,5 +1,5 @@
 import mysql.connector
-from variables import host,password,port,database,user
+from constantes import host,password,port,database,user
 
 def agregar_url(url,nombre_cientifico):
     try:

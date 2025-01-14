@@ -1,4 +1,4 @@
-CREATE TABLE Peces (
+CREATE TABLE IF NOT EXISTS peces (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre_cientifico VARCHAR(255) NOT NULL,
     nombre_comun VARCHAR(255) NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE Peces (
     imagen TEXT
 );
 
-INSERT INTO Peces (
+INSERT INTO peces (
     nombre_cientifico,
     nombre_comun,
     taxonomia,
@@ -95,10 +95,8 @@ INSERT INTO Peces (
     'Trucha arco-iris',
     'Clase: Actinopterygii, Orden: Salmoniformes, Familia: Salmonidae',
     'Exótica',
-    'Su distribución natural se extiende por los ríos
-    de la vertiente pacífica de América del Norte desde
-Alaska a Baja California. Sin embargo, es una de las especies más cultivadas habiéndose introducido de manera altificial en casi todo el mundo. En Espa
-ña fue introducida, desde América del Norte, a finales del siglo XIX (Ugarte, 1929) y se puede hallar
+    'Su distribución natural se extiende por los ríos de la vertiente pacífica de América del Norte desde
+Alaska a Baja California. Sin embargo, es una de las especies más cultivadas habiéndose introducido de manera altificial en casi todo el mundo. En España fue introducida, desde América del Norte, a finales del siglo XIX (Ugarte, 1929) y se puede hallar
 en todas las cuencas hidrográficas, especialmente en aquellos sitios en donde se sueltan ejemplares
 con fines de repoblación y cerca de las piscifactorías, donde siempre se escapan algunos ejemplares.
 Durante el período de 1973 a 1983, en la cuenca del Duero, la trucha arco-iris experimentó un
@@ -645,7 +643,7 @@ Mundo: endémica de España.'),
 
 
 
-('Chondrostoma polylepis', 'Boga de río', 'Clase: Actinopterygii, Orden: Cypriniformes, Familia: Cyprinidae', 'Autóctona', 
+('Pseudochondrostoma  polylepis', 'Boga del Tajo', 'Clase: Actinopterygii, Orden: Cypriniformes, Familia: Cyprinidae', 'Autóctona', 
 'Especie de talla media que no suele alcanzar los 50 cm de longitud total. Cuerpo alargado más
 que otras especies de ciprínidos. La abertura bucal es inferior y recta. El labio inferior es grueso y
 presenta una lámina córnea bien desarrollada. Las aletas dorsal y anal son largas, la primera de ellas

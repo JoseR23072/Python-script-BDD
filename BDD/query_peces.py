@@ -1,9 +1,12 @@
 import mysql.connector
-from variables import password,host,user,port,database
+import os
+from constantes import password,host,user,port,database
 
 nombre_cientifico_peces=[]
 try:
-    # Conexión a la base de datos
+    
+    
+    # creando conexion a la base de datos
     connector = mysql.connector.connect(
         host=host,
         port=port,
@@ -12,17 +15,20 @@ try:
         database=database  # Opcional si quieres conectarte a una base de datos específica
     )
     
-    cursor1 = connector.cursor()
+    cursor = connector.cursor()
 
+   
 
-    # Ejecutar consulta para obtener el id del pez
-    cursor1.execute("Select nombre_cientifico from peces")
+    # Consulta para obtener los nombres cientificos de la base de datos
+    cursor.execute("Select nombre_cientifico from peces")
     
     
 
-    for pez in cursor1:
+    for pez in cursor:
         nombre_cientifico_peces.append(pez[0])
-
+        
+    connector.commit()
+    cursor.close()
     connector.close()
 
 except mysql.connector.Error as err:
