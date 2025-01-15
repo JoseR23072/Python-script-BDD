@@ -1,6 +1,5 @@
 import os
 import shutil
-
 def crear_carpeta_sql(directorio_origen):
     for root, dirs, files in os.walk(directorio_origen):
         print("Directorio actual:", root)
@@ -35,21 +34,21 @@ def crear_archivo_sql_para_pez(directorio_destino, nombre_pez,url):
         archivo.write(f"UPDATE peces SET imagen='{url}' WHERE nombre_cientifico='{nombre_pez}';")
     
 
-# Directorio raíz del proyecto
-project_path = os.path.dirname(os.path.abspath(__file__))
+# # Directorio raíz del proyecto
+# project_path = os.path.dirname(os.path.abspath(__file__))
 
-# Ruta de la carpeta de origen
-directorio_origen = os.path.join(project_path, "peces_imagenes")
+# # Ruta de la carpeta de origen
+# directorio_origen = os.path.join(project_path, "peces_imagenes")
 
-directorio_origen=os.path.join(directorio_origen,"BUSCAR_MANUAL")
-#print(directorio_origen)
-# Ruta de la carpeta destino
-directorio_destino = os.path.join(project_path, "sql_peces")
+# directorio_origen=os.path.join(directorio_origen,"BUSCAR_MANUAL")
+# #print(directorio_origen)
+# # Ruta de la carpeta destino
+# directorio_destino = os.path.join(project_path, "sql_peces")
 
-# Crear la carpeta destino si no existe
-#os.makedirs(directorio_destino, exist_ok=True)
+# # Crear la carpeta destino si no existe
+# #os.makedirs(directorio_destino, exist_ok=True)
 
-sql_faltantes=contar_carpetas_en_una_carpeta(directorio_origen)
-for pez in sql_faltantes:
-    url=input(f"Estas en el pez {pez} -> di la url\n")
-    crear_archivo_sql_para_pez(directorio_destino,pez,url)
+# sql_faltantes=contar_carpetas_en_una_carpeta(directorio_origen)
+# for pez in sql_faltantes:
+#     url=input(f"Estas en el pez {pez} -> di la url\n")
+#     crear_archivo_sql_para_pez(directorio_destino,pez,url)

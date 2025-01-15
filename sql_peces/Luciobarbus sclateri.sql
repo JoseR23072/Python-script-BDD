@@ -1,0 +1,1 @@
+UPDATE peces SET imagen='https://www.turismodeobservacion.com/media/fotografias/barbo-gitano-luciobarbus-sclateri-acuario-de-sevilla-81210-xl.jpg' WHERE nombre_cientifico='Luciobarbus sclateri';

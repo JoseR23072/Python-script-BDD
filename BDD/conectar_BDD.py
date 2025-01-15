@@ -1,5 +1,30 @@
 import mysql.connector
 from constantes import host,password,port,user,database,peces_validos
+
+def peces_sin_imagenes():
+    try:
+        peces=[]
+        # Conexión a la base de datos (solo una vez, fuera del bucle)
+        connector = mysql.connector.connect(
+            host=host,
+            port=port,
+            user=user,
+            password=password,
+            database=database  # Opcional si quieres conectarte a una base de datos específica
+        )
+        
+        cursor1 = connector.cursor()
+        cursor1.execute("SELECT nombre_cientifico FROM peces WHERE imagen is NULL")
+        for pez in cursor1:
+            peces.append(pez[0])
+        connector.close()
+        return peces
+
+        
+    
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+
 def actualizar_nombres():
     try:
         peces_no_actualizados=[]

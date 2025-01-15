@@ -672,7 +672,7 @@ Mundo: endémica de la Península Ibérica.'),
 
 
 
-('Chondrostoma turiense', 'Madrija', 'Clase: Actinopterygii, Orden: Cypriniformes, Familia: Cyprinidae', 'Autóctona', 
+('Parachondrostoma turiense', 'Madrija', 'Clase: Actinopterygii, Orden: Cypriniformes, Familia: Cyprinidae', 'Autóctona', 
 'Ciprínido de tamaño medio que no suele sobrepasar los 30 cm de longitud total. Cuerpo alarga-
 do con la cabeza relativamente pequeña y boca situada en su parte inferior. El labio inferior es grue-
 so y presenta una lámina córnea de forma arqueada, a diferencia de la boga de río cuya lámina cór-
