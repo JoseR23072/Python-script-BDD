@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen='https://www.fishbase.se/ols/display_image.php?fw=n&imgName=1668428932_172.68.50.162.jpg' WHERE nombre_cientifico='Hucho hucho';
+UPDATE peces peces SET imagen='https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Hucho_perryi.jpg/640px-Hucho_perryi.jpg' WHERE nombre_cientifico='Hucho hucho';

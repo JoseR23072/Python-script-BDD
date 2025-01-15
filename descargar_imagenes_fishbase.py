@@ -30,8 +30,8 @@ def obtener_imagenes(url,genero,especie):
                 url_img=div_padre_imagen.find('span').find('img').get('src','')
 
                 imagenes_correctas.append((f'https://www.fishbase.se/{url_img[3:]}',f'https://www.fishbase.se/{url_img_pequeña}'))
-        # print(imagenes_correctas)
-
+        # for img in imagenes_correctas:
+        #     print(img)
         indice=1
         for enlace,img_pequeño in imagenes_correctas:
             # creamos una carpeta para cada pez
@@ -45,13 +45,14 @@ def obtener_imagenes(url,genero,especie):
             nombre_archivo = os.path.join(directorio_destino, f"{genero}-{especie}_{indice}.jpg")
 
             # Llamar a la función para descargar la imagen
+            print(f"directa: {enlace}")
             descargar_imagen(enlace,img_pequeño, nombre_archivo,genero,especie)
             indice=indice+1
         
     else:
         return f"Error al conectar a la URL: {respuesta.status_code}"
 
-
+obtener_imagenes("https://www.fishbase.se/photos/ThumbnailsSummary.php?ID=258","Exos","Lucious")
 
 def descargar_imagen(url_grande,url_img_pequeña,nombre_archivo,genero,especie):
     try:
@@ -68,6 +69,8 @@ def descargar_imagen(url_grande,url_img_pequeña,nombre_archivo,genero,especie):
 
             # Crear un archivo .sql
             nombre_sql = nombre_archivo.replace('.jpg', '.sql')   # Crear un archivo independiente a partir del nombre de la imagen
+            if 'https://www.fishbase.se/ols' in url_grande:
+                url_grande = url_img_pequeña
             query=f"INSER INTO peces SET imagen='{url_grande}' WHERE nombre_cientifico='{genero} {especie}';"
             
             with open(nombre_sql, 'w') as sql_file:
@@ -131,7 +134,9 @@ def obtener_web_con_imagenes(genero, especie):
 
 
 #actualizar_nombres()
-for pez in nombre_cientifico_peces:
-    split_pez=pez.split(' ')
-    obtener_web_con_imagenes(split_pez[0],split_pez[1])
+
+# for pez in nombre_cientifico_peces:
+#     split_pez=pez.split(' ')
+#     obtener_web_con_imagenes(split_pez[0],split_pez[1])
+
 # obtener_web_con_imagenes("Alburnus","alburnus")

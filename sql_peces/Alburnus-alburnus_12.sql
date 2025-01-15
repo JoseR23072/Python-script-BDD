@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen='https://www.fishbase.se/ols/display_image.php?fw=n&imgName=1668412171_172.68.50.114.jpg' WHERE nombre_cientifico='Alburnus alburnus';
+UPDATE peces peces SET imagen='https://www.fishbase.se/tools/display_image.php?fw=n&imgName=1668412171_172.68.50.114.jpg' WHERE nombre_cientifico='Alburnus alburnus';
