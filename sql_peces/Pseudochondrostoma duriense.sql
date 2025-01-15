@@ -1,0 +1,1 @@
+UPDATE peces peces SET imagen='https://inaturalist-open-data.s3.amazonaws.com/photos/1532452/original.jpg' WHERE nombre_cientifico='Pseudochondrostoma duriense';

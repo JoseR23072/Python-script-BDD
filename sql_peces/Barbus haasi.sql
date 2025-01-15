@@ -1,0 +1,1 @@
+UPDATE peces peces SET imagen='https://i0.wp.com/elmedinaturaldelbages.cat/wp-content/uploads/2017/06/barbcr.jpg?w=507&ssl=1' WHERE nombre_cientifico='Barbus haasi';

@@ -1,0 +1,1 @@
+UPDATE peces peces SET imagen='https://www.fishipedia.es/wp-content/uploads/2024/07/Alburnus-alburnus-400x267.jpg' WHERE nombre_cientifico='Alosa fallax';

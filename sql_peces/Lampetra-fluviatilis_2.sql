@@ -1,0 +1,1 @@
+UPDATE peces peces SET imagen='https://www.fishbase.se/images/species/Laflu_u3.jpg' WHERE nombre_cientifico='Lampetra fluviatilis';

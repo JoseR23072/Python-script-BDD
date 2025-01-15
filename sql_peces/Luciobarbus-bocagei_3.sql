@@ -1,0 +1,1 @@
+UPDATE peces peces SET imagen='https://www.fishbase.se/ols/display_image.php?fw=n&imgName=79e6e60993_7208.jpg' WHERE nombre_cientifico='Luciobarbus bocagei';

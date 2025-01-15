@@ -1,0 +1,1 @@
+UPDATE peces peces SET imagen='https://www.fishbase.se/images/species/Lapla_u4.jpg' WHERE nombre_cientifico='Lampetra planeri';

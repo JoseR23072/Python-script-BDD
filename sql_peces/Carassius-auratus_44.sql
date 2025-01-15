@@ -1,0 +1,1 @@
+UPDATE peces peces SET imagen='https://www.fishbase.se/ols/display_image.php?fw=n&imgName=a1f1fc834b_8114.jpg' WHERE nombre_cientifico='Carassius auratus';

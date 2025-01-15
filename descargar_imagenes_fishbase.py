@@ -24,11 +24,16 @@ def obtener_imagenes(url,genero,especie):
         for imagen in imagenes:
             # Obtenemos el valor del atributo 'src' de cada imagen
             src = imagen.get('src', '')
-            if re.search(r'../images/thumbnails', src) and not re.search(r'/tools/display_image', src):
-                src=src[2:]
-                imagenes_correctas.append(f'https://www.fishbase.se{src}')
+            if re.search(r'../images/thumbnails', src) or re.search(r'/tools/display_image', src):
+                div_padre_imagen=imagen.find_parent('a')
+                url_img_pequeña=src
+                url_img=div_padre_imagen.find('span').find('img').get('src','')
+
+                imagenes_correctas.append((f'https://www.fishbase.se/{url_img[3:]}',f'https://www.fishbase.se/{url_img_pequeña}'))
+        # print(imagenes_correctas)
+
         indice=1
-        for enlace in imagenes_correctas:
+        for enlace,img_pequeño in imagenes_correctas:
             # creamos una carpeta para cada pez
             directorio_destino = os.path.join(carpeta_principal, f"{genero} {especie}")
 
@@ -40,7 +45,7 @@ def obtener_imagenes(url,genero,especie):
             nombre_archivo = os.path.join(directorio_destino, f"{genero}-{especie}_{indice}.jpg")
 
             # Llamar a la función para descargar la imagen
-            descargar_imagen(enlace, nombre_archivo)
+            descargar_imagen(enlace,img_pequeño, nombre_archivo,genero,especie)
             indice=indice+1
         
     else:
@@ -48,10 +53,10 @@ def obtener_imagenes(url,genero,especie):
 
 
 
-def descargar_imagen(url,nombre_archivo):
+def descargar_imagen(url_grande,url_img_pequeña,nombre_archivo,genero,especie):
     try:
         # Hacer la solicitud HTTP para obtener la imagen
-        response = requests.get(url, stream=True)
+        response = requests.get(url_img_pequeña, stream=True)
         
         # Verificar que la solicitud fue exitosa
         if response.status_code == 200:
@@ -60,8 +65,16 @@ def descargar_imagen(url,nombre_archivo):
                 for chunk in response.iter_content(1024):
                     file.write(chunk)
             # print(f'Imagen descargada: {nombre_archivo}')
+
+            # Crear un archivo .sql
+            nombre_sql = nombre_archivo.replace('.jpg', '.sql')   # Crear un archivo independiente a partir del nombre de la imagen
+            query=f"INSER INTO peces SET imagen='{url_grande}' WHERE nombre_cientifico='{genero} {especie}';"
+            
+            with open(nombre_sql, 'w') as sql_file:
+                sql_file.write(query)
+            #print(f'Archivo SQL creado: {nombre_sql}')
         else:
-            print(f'Error al descargar la imagen: {url}')
+            print(f'Error al descargar la imagen: {url_img_pequeña}')
     except Exception as e:
         print(f'Ocurrió un error: {e}')
 
@@ -117,9 +130,8 @@ def obtener_web_con_imagenes(genero, especie):
 
 
 
-# actualizar_nombres()
-
+#actualizar_nombres()
 for pez in nombre_cientifico_peces:
     split_pez=pez.split(' ')
     obtener_web_con_imagenes(split_pez[0],split_pez[1])
-
+# obtener_web_con_imagenes("Alburnus","alburnus")
