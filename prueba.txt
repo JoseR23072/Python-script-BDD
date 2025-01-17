@@ -1,38 +1,4 @@
-CREATE TABLE IF NOT EXISTS peces (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre_cientifico VARCHAR(255) NOT NULL,
-    nombre_comun VARCHAR(255) NOT NULL,
-    taxonomia TEXT,
-    origen VARCHAR(100),
-    descripcion TEXT,
-    biologia_ecologia TEXT,
-    distribucion TEXT,
-    imagen_url TEXT,
-    imagen LONGBLOB
-);
-CREATE TABLE IF NOT EXISTS rios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(255) NOT NULL,
-    descripcion TEXT,
-    imagen TEXT
-);
-
-CREATE TABLE IF NOT EXISTS peces_rios (
-    pez_id INT,
-    rio_id INT,
-    PRIMARY KEY (pez_id, rio_id),
-    FOREIGN KEY (pez_id) REFERENCES peces(id),
-    FOREIGN KEY (rio_id) REFERENCES rios(id)
-);
-INSERT INTO peces (
-    nombre_cientifico,
-    nombre_comun,
-    taxonomia,
-    autoctona_invasora,
-    descripcion,
-    biologia_ecologia,
-    distribucion
-) VALUES (
+(
     '*Lampetra fluviatilis*',
     'Lamprea de río',
     'Clase: Cephalaspidomorphi, Orden: Petromyzontiformes, Familia: Petromyzontidae',
@@ -557,7 +523,7 @@ Las escamas son grandes y su número es de 44-53. El número
 más frecuente es de 6-5 y raramente 5-5.', 
 'Recientemente las poblaciones españolas de Ch.toxostoma,
 que eran tratadas como subespecies por la comunidad cientí-
-fica, han sido elevadas a rango de especie CElvira, 1997). Nosotros seguimos la nomenclatura de El-
+fica, han sido elevadas a rango de especie (Elvira, 1997). Nosotros seguimos la nomenclatura de El-
 vira (1997) pero hay que tener en cuenta que en la legislación nacional e internacional, anterior a
 1997, las poblaciones españolas se mencionan como Ch. toxostoma. Es la especie del género Chon-
 drostoma que ha sufrido una reducción poblacional más notable.
@@ -576,7 +542,7 @@ quiespinas de 12 a 24. El cuerpo suele estar pigmentado con peque-
 ñas manchas negras muy marcadas en las poblaciones de los ríos de
 Galicia y Portugal.', 
 'Esta especie fue descrita como subespecie de Ch. polylepis. Sin
-embargo, recientemente ha sido elevada a rango de especie CElvira,
+embargo, recientemente ha sido elevada a rango de especie (Elvira,
 1997). Nosotros seguimos la nomenclatura de Elvira (1997) pero hay
 que tener en cuenta que en la legislación nacional e internacional,
 anterior a 1997, se menciona como Ch. polylepis.
@@ -637,7 +603,7 @@ mina córnea de forma arqueada a diferencia de la boga de río cuya lá-
 mina córnea es recta. Pedúnculo caudal largo y estrecho. Las aletas son
 largas, la dorsal tiene ocho radios ramificados y la anal de ocho a diez.', 
 'Recientemente las poblaciones españolas de Ch. toxostoma, que eran tratadas como subespecies
-por la comunidad científica, han sido elevadas a rango de especie CElvira, 1997). Nosotros seguimos
+por la comunidad científica, han sido elevadas a rango de especie (Elvira, 1997). Nosotros seguimos
 la nomenclatura de Elvira (1997) pero hay que tener en cuenta que en la legislación nacional e in-
 ternacional, anterior a 1997, las poblaciones españolas se mencionan como Ch. toxostoma.
 Es una especie típicamente reófila que vive en aguas corrientes pero que pueden sobrevivir en
@@ -782,7 +748,4 @@ UE: se encuentra en Alemania, Bélgica, Dinamarca, Francia, Finlandia, Gran Bret
 landa, Irlanda, Italia, Portugal y Suecia.
 Mundo: a lo largo de las costas atlánticas desde el norte de Marruecos y el mar Báltico hasta el
 golfo de Finlandia y en todo el mar Mediterráneo incluido el mar Negro.'
-
-);
-
-
+)

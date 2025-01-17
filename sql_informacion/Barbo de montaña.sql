@@ -1,0 +1,10 @@
+INSERT INTO peces (nombre_cientifico,nombre_comun,taxonomia,origen,descripcion,biologia_ecologia,distribucion) VALUES ('Barbus meridionalis','Barbo de montaña','Clase: Actinopterygii, Orden: Cypriniformes, Familia: Cyprinidae','Autóctona','Barbo relativamente pequeño que en España raramente alcanza los 30 cm de longitud total y 200 g de peso. La cabeza es relativamente pequeña, mucho más que en B. haasi. Los labios son muy variables, aunque normalmente son anchos, presentando un lóbulo medio algo visible. Las barbillas son cortas y finas. El último radio sencillo de la aleta dorsal no presenta denticulaciones. Las aletas son bajas y la dorsal presenta un perfil convexo.
+La coloración del cuerpo en los adultos es pardo-grisácea y se encuentra profusamente moteada de manchas negras, tanto en adultos como en juveniles. Este patrón de coloración es similar al que ostentan los individuos jóvenes de otras especies de barbos, prestándose a confusión. No se ha descrito la existencia de tubérculos nupciales en esta especie.','a tendencia poblacional es marcadamente regresiva ya que prefiere cursos de
+aguas claras y oxigenadas, los cuales son cada vez menos frecuentes en su área de
+distribución natural. En algunos ríos parece hibridar con B. haasi.
+Esta especie vive en los cursos fluviales de montaña, cuyas aguas son rápidas, oxigenadas y lim
+pias ya que son muy sensibles a la contaminación. No obstante, también abunda en los cursos me
+dios de algunos ríos mediterráneos situados en el norte de Cataluña. En Francia se sabe que puede
+colonizar cursos medios y bajos. Su alimentación está basada principalmente en invertebrados.','España: en España vive en las cuencas de los ríos Muga, Fluviá, Ter, Daró, Tordera y Besós.
+DE: también en Francia.
+Mundo: endémica del litoral mediterráneo de Francia y España.')

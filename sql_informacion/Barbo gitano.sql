@@ -1,0 +1,14 @@
+INSERT INTO peces (nombre_cientifico,nombre_comun,taxonomia,origen,descripcion,biologia_ecologia,distribucion) VALUES ('Barbus sclateri','Barbo gitano','Clase: Actinopterygii, Orden: Cypriniformes, Familia: Cyprinidae','Autóctona','El barbo gitano es una especie de gran tamaño que puede alcanzar alrededor de 40 cm de longitud total. Su cuerpo es robusto y el pedúnculo caudal es más corto y alto que en otras especies del género Barbus. Los labios son gruesos, aunque a veces el inferior se encuentra retraído, dejando ver el dentario. Tienen unas barbillas largas, sobrepasando la primera el borde anterior del ojo y la segunda el posterior, aunque también puede haber individuos con barbillas más cortas.
+El último radio sencillo de la aleta dorsal presenta denticulaciones de tamaño medio en casi toda su extensión, siendo más pequeñas que en Barbus comizo y Barbus microcephalus. Tiene un menor número de escamas que otras especies del mismo género. La coloración es muy constante, y en los ejemplares adultos existe un fuerte contraste entre la parte ventral clara y el dorso oscuro.
+En época de reproducción, los machos desarrollan en la cabeza tubérculos nupciales grandes y llamativos, y se acentúa la diferencia de color entre el dorso y el vientre. Presentan una longevidad que no sobrepasa los ocho años de edad. Poseen una tasa de crecimiento baja, ya que durante el verano los individuos se ven aislados en pequeñas pozas debido a la sequía y los recursos alimentarios decrecen. El período de crecimiento es largo (6 meses) al estar influido por la temperatura, que es elevada en el sur de España.','Marcadamente regresiva, aunque todavía es localmente abundante en algunos ríos.
+El barbo gitano ocupa diferentes tramos de río en un mismo área de distribución, pero desaparece
+en las aguas frías y rápidas.
+En las hembras, el desarrollo gonadal comienza en septiembre, intensificándose desde febrero
+hasta abril que es cuando alcanza su valor máximo. La puesta tiene lugar en mayo para la pobla
+ción del Guadalquivir y entre mayo y junio para la población del Embalse de Cubillas. Los machos
+maduran a partir de 7-9 cm de longitud (2-4 años de edad), mientras que las hembras lo hacen a
+partir de los 11-16 cm (6-7 años de edad). Una hembra puede llegar a poner unos 14.000 huevos.','España: vive en las cuencas de lar ríos Guadalquivir, Guadiaro, Guadalete, Guadalhorce, Segura,
+afluentes del tramo bajo del Guadiana y en numerosas pequeñas cuencas del sur de España hasta
+la Cuenca del Vélez en Málaga.
+UE: está presente también en Portugal.
+Mundo: especie endémica de la Península Ibérica.')
