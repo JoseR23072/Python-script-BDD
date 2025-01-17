@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen='https://www.tagmyfish.com/wp-content/uploads/2023/02/Iberochondrostoma-lemmingii-1000.jpg' WHERE nombre_cientifico='Iberochondrostoma lemmingii';
+UPDATE peces peces SET imagen_url='https://www.tagmyfish.com/wp-content/uploads/2023/02/Iberochondrostoma-lemmingii-1000.jpg' WHERE nombre_cientifico='Iberochondrostoma lemmingii';

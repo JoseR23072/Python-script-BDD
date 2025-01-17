@@ -7,9 +7,23 @@ CREATE TABLE IF NOT EXISTS peces (
     descripcion TEXT,
     biologia_ecologia TEXT,
     distribucion TEXT,
+    imagen_url TEXT,
+    imagen LONGBLOB
+);
+CREATE TABLE IF NOT EXISTS rios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion TEXT,
     imagen TEXT
 );
 
+CREATE TABLE IF NOT EXISTS peces_rios (
+    pez_id INT,
+    rio_id INT,
+    PRIMARY KEY (pez_id, rio_id),
+    FOREIGN KEY (pez_id) REFERENCES peces(id),
+    FOREIGN KEY (rio_id) REFERENCES rios(id)
+);
 INSERT INTO peces (
     nombre_cientifico,
     nombre_comun,
@@ -769,8 +783,6 @@ landa, Irlanda, Italia, Portugal y Suecia.
 Mundo: a lo largo de las costas atlánticas desde el norte de Marruecos y el mar Báltico hasta el
 golfo de Finlandia y en todo el mar Mediterráneo incluido el mar Negro.'
 
-)
-
-;
+);
 
 

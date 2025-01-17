@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen='https://www.fishbase.se/images/species/Pemar_u9.jpg' WHERE nombre_cientifico='Petromyzon marinus';
+UPDATE peces peces SET imagen_url='https://www.fishbase.se/images/species/Pemar_u9.jpg' WHERE nombre_cientifico='Petromyzon marinus';

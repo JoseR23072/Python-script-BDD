@@ -1,1 +1,1 @@
-UPDATE peces SET imagen='https://www.plantasyhongos.es/herbarium/p/Pseudochondrostoma_polylepis_01.jpg' WHERE nombre_cientifico='Chondrostoma polylepis';
+UPDATE peces SET imagen_url='https://www.plantasyhongos.es/herbarium/p/Pseudochondrostoma_polylepis_01.jpg' WHERE nombre_cientifico='Chondrostoma polylepis';

@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen='https://www.miteco.gob.es//content/dam/fototeca/imagenes/1995/07/21655.jpg' WHERE nombre_cientifico='Luciobarbus comizo';
+UPDATE peces peces SET imagen_url='https://www.miteco.gob.es//content/dam/fototeca/imagen_urles/1995/07/21655.jpg' WHERE nombre_cientifico='Luciobarbus comizo';

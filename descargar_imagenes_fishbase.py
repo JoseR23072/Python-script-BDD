@@ -52,7 +52,6 @@ def obtener_imagenes(url,genero,especie):
     else:
         return f"Error al conectar a la URL: {respuesta.status_code}"
 
-obtener_imagenes("https://www.fishbase.se/photos/ThumbnailsSummary.php?ID=258","Exos","Lucious")
 
 def descargar_imagen(url_grande,url_img_pequeña,nombre_archivo,genero,especie):
     try:

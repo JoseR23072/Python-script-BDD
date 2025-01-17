@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen='https://www.joelsartore.com/wp-content/uploads/stock/FIS039/FIS039-00037-1920x1280.jpg' WHERE nombre_cientifico='Anaecypris hispanica';
+UPDATE peces peces SET imagen_url='https://www.joelsartore.com/wp-content/uploads/stock/FIS039/FIS039-00037-1920x1280.jpg' WHERE nombre_cientifico='Anaecypris hispanica';

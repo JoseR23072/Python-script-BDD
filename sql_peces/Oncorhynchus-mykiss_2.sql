@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen='https://www.fishbase.se/images/species/Onmyk_j0.jpg' WHERE nombre_cientifico='Oncorhynchus mykiss';
+UPDATE peces peces SET imagen_url='https://www.fishbase.se/images/species/Onmyk_j0.jpg' WHERE nombre_cientifico='Oncorhynchus mykiss';

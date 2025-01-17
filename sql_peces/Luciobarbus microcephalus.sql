@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen='https://www.plantasyhongos.es/herbarium/l/Luciobarbus_microcephalus_02.jpg' WHERE nombre_cientifico='Luciobarbus microcephalus';
+UPDATE peces peces SET imagen_url='https://www.plantasyhongos.es/herbarium/l/Luciobarbus_microcephalus_02.jpg' WHERE nombre_cientifico='Luciobarbus microcephalus';

@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen='https://www.mediterranea.org/cae/divulgac/peces/barbus.jpg' WHERE nombre_cientifico='Luciobarbus guiraonis';
+UPDATE peces peces SET imagen_url='https://www.mediterranea.org/cae/divulgac/peces/barbus.jpg' WHERE nombre_cientifico='Luciobarbus guiraonis';

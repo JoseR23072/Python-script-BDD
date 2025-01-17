@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen='https://www.fishbase.se/images/species/Bamer_u7.jpg' WHERE nombre_cientifico='Barbus meridionalis';
+UPDATE peces peces SET imagen_url='https://www.fishbase.se/images/species/Bamer_u7.jpg' WHERE nombre_cientifico='Barbus meridionalis';
