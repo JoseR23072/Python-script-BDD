@@ -59,7 +59,7 @@ def actualizar_nombres():
                 
                 # Usar parámetros para evitar inyecciones SQL
                 update_query = """
-                UPDATE Peces
+                UPDATE peces
                 SET nombre_comun = %s, nombre_cientifico = %s
                 WHERE id = %s
                 """

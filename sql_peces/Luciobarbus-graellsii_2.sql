@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen_url='https://www.fishbase.se/images/species/Bagra_u2.jpg' WHERE nombre_cientifico='Luciobarbus graellsii';
+UPDATE peces SET imagen_url='https://www.fishbase.se/images/species/Bagra_u2.jpg' WHERE nombre_cientifico='Luciobarbus graellsii';

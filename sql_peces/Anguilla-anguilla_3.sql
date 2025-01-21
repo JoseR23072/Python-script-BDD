@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen_url='https://www.fishbase.se/images/species/Anang_u3.jpg' WHERE nombre_cientifico='Anguilla anguilla';
+UPDATE peces SET imagen_url='https://www.fishbase.se/images/species/Anang_u3.jpg' WHERE nombre_cientifico='Anguilla anguilla';

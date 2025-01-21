@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen_url='https://www.plantasyhongos.es/herbarium/a/Anaecypris_hispanica_03.jpg' WHERE nombre_cientifico='Anaecypris hispanica';
+UPDATE peces SET imagen_url='https://www.plantasyhongos.es/herbarium/a/Anaecypris_hispanica_03.jpg' WHERE nombre_cientifico='Anaecypris hispanica';

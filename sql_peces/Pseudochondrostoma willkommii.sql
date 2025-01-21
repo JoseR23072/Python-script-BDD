@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen_url='https://birdinginspain.wordpress.com/wp-content/uploads/2013/06/boga-guadiana-guadiana-internacional-birding-in-badajoz-extremadura-spain-espac3b1a.jpg' WHERE nombre_cientifico='Pseudochondrostoma willkommii';
+UPDATE peces SET imagen_url='https://birdinginspain.wordpress.com/wp-content/uploads/2013/06/boga-guadiana-guadiana-internacional-birding-in-badajoz-extremadura-spain-espac3b1a.jpg' WHERE nombre_cientifico='Pseudochondrostoma willkommii';

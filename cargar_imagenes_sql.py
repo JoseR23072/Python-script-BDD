@@ -49,8 +49,8 @@ def corregir_errata_sql(directorio_origen):
                 if "INSERT INTO" in query:
                     # print(query[7:])
                     query=query.replace("INSERT INTO","UPDATE peces")
-                if "imagen" in query:
-                    query=query.replace("imagen","imagen_url")
+                if "pecesSET" in query:
+                    query=query.replace("pecesSET","peces SET")
                 # Guardar el archivo con la corrección
                 with open(ruta_sql, "w", encoding="utf-8") as file:
                     file.write(query)
@@ -95,7 +95,6 @@ def cargar_sql_informacion():
         if connector.is_connected():
             cursor1.close()
             connector.close()
-""" directorio_actual=os.path.dirname(os.path.abspath(__file__))
-directorio_origen = os.path.join(directorio_actual, "sql_peces")
-corregir_errata_sql(directorio_origen)
- """
+# directorio_actual=os.path.dirname(os.path.abspath(__file__))
+# directorio_origen = os.path.join(directorio_actual, "sql_peces")
+# corregir_errata_sql(directorio_origen)

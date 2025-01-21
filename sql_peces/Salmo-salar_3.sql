@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen_url='https://www.fishbase.se/images/species/Sasal_u7.jpg' WHERE nombre_cientifico='Salmo salar';
+UPDATE peces SET imagen_url='https://www.fishbase.se/images/species/Sasal_u7.jpg' WHERE nombre_cientifico='Salmo salar';

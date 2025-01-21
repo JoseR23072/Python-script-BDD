@@ -1,1 +1,1 @@
-UPDATE peces peces SET imagen_url='https://www.buceoh2o.com/images/guiadepeces/barbocomuniberico.jpg' WHERE nombre_cientifico='Luciobarbus bocagei';
+UPDATE peces SET imagen_url='https://www.buceoh2o.com/images/guiade/barbocomuniberico.jpg' WHERE nombre_cientifico='Luciobarbus bocagei';
