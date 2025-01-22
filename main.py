@@ -9,11 +9,11 @@ directorio_actual=os.path.dirname(os.path.abspath(__file__))
 
 directorio_sql_peces_informacion=os.path.join(directorio_actual,"sql_informacion")
 
-# cargar_directorio_sql(directorio_sql_peces_informacion)
-# actualizar_nombres()
+cargar_directorio_sql(directorio_sql_peces_informacion)
+actualizar_nombres()
 
 directorio_sql_peces = os.path.join(directorio_actual, "sql_peces") #aqui se cargar las imagenes de peces
-# directorio_rios= os.path.join(directorio_actual,"sql_rios") #aqui se cargar las imagenes ded rios
+directorio_rios= os.path.join(directorio_actual,"sql_rios") #aqui se cargar las imagenes ded rios
 
 cargar_directorio_sql(directorio_sql_peces)
-# cargar_directorio_sql(directorio_rios)
+cargar_directorio_sql(directorio_rios)
