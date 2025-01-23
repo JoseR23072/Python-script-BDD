@@ -1,15 +1,15 @@
-# # Configuración de conexión
-# host = "junction.proxy.rlwy.net"  # No incluir el puerto aquí; se especifica por separado
-# port = 23092         # Puerto por defecto para MySQL
-# user = "root"
-# password = "wPLzFMsnkbqflSorIjTuyRCiUgegDsnU"
-# database = "railway"  # Cambia esto por el nombre de tu base de datos
+# Configuración de conexión
+host = "junction.proxy.rlwy.net"  # No incluir el puerto aquí; se especifica por separado
+port = 23092         # Puerto por defecto para MySQL
+user = "root"
+password = "wPLzFMsnkbqflSorIjTuyRCiUgegDsnU"
+database = "railway"  # Cambia esto por el nombre de tu base de datos
 
-host="localhost"
-port=3306
-user="root"
-password=""
-database="bdpeces"
+# host="localhost"
+# port=3306
+# user="root"
+# password=""
+# database="bdpeces"
 
 peces_validos = [
     {"nombre_comun": "Lamprea de río", "nombre_cientifico": "Lampetra fluviatilis"},
